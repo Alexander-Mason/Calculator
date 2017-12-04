@@ -188,7 +188,7 @@
         android:layout_height="48dp"
         android:layout_marginStart="8dp"
         android:text="+"
-        app:layout_constraintBaseline_toBaselineOf="@+id/buttonEqual"
-        app:layout_constraintStart_toEndOf="@+id/buttonEqual" />
+        app:layout_constraintBaseline_toBaselineOf="@+id/buttonEquals"
+        app:layout_constraintStart_toEndOf="@+id/buttonEquals" />
 
 </android.support.constraint.ConstraintLayout>
