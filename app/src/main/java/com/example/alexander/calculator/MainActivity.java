@@ -95,9 +95,15 @@ public class MainActivity extends AppCompatActivity {
     private void performOperation(String value, String operation) {
         displayOperation.setText(operation);
         if(operand1 == null){
-            operand1 = Double.valueOf(value);
+            if(value.equals(".")) {
+                operand1 = 0.0;
+            }else {
+                operand1 = Double.valueOf(value);
+            }
         }else{
-            if(!value.equals(".")) {
+            if(value.equals(".")) {
+                operand2 = 0.0;
+            }else{
                 operand2 = Double.valueOf(value);
             }
 
